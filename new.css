@@ -1,0 +1,307 @@
+
+body , html {
+margin: 0;
+padding: 0;
+width: 100%;
+box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.slider{
+    width: 70%;
+    height: 70%;
+    position: relative;
+    overflow: hidden;
+   margin-right: 10%;
+   margin-top: 4%;
+}
+
+
+
+.slide{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+     text-align: center;
+   object-fit: contain;
+   display: none;
+   overflow: hidden;
+}
+.slide.active{
+    display: block;
+}
+
+.prev , .next {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%);
+    background: rgb(0, 0, 0 ,0.5);
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 10;
+}
+
+
+
+.prev {
+    left: 15px;
+}
+
+.next{
+    right: 15px;
+}
+/* نشانگز*/
+.dot{
+    width: 12px;
+    height: 12px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+    display: block;
+}
+
+.dot .active {
+    background: #007bff;
+}
+/*
+.slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+*/
+.maintext:hover{
+transform: scale(1.1);
+transition: all 1s;
+}
+
+#Footer:hover{
+transform: scale(1.1);
+transform: all 1s;
+background-color:#999;
+}
+
+
+@keyframes example1{
+    from {background-color: #353474};
+    to {background-color: rgb(109, 203, 216)};
+}
+
+#im{
+    
+position:fixed;
+top:0;
+left: 0;
+right: 0;
+z-index: -1;
+
+}
+
+#jumpdn{
+    width: 100%;
+    position: relative;
+   top:560px;
+    background-color: rgba(63, 155, 179, 0.5);
+    text-align: center;
+    font-size: xx-large;
+}
+
+#maintext1{
+    position: relative;
+    left: 0cm;
+    height: 20%;
+}
+
+*{
+    direction:rtl;
+    overflow:auto;
+    font-family: tahoma;
+    text-align: justify;
+}
+
+
+.maintext:hover{
+
+    color: aliceblue;
+}
+
+
+#about:hover{
+    color:#c4c9bb;
+}
+
+.maintext:active{
+    color:#ff0000;
+}
+
+div::first line{
+    font-size: larger;
+}
+
+
+div::after{
+    content:" \a\a";
+    white-space: pre;
+}
+
+.maintext:nth-child(2n+1){
+background-color: aqua;
+}
+
+.maintext:nth-child(2n+1):hover{
+    color: rgb(252, 250, 249);
+}
+
+.maintext:nth-child(2n){
+    background-color:rgb(114, 184, 216);
+}
+
+#modal-contact:hover{
+    background-color: #af9fdd;
+}
+
+#about{
+    background: linear-gradient(#333,#999);
+    color: black;
+    border: rgb(85, 47, 255, 0.5) solid 5px;
+    border-radius: 20px;
+    position: fixed;
+    top: 90px;
+   left: 0;
+    padding: 1%;
+    width: 10%;
+    overflow: auto;
+    font-size: medium;
+}
+
+
+#maintext1{
+    background-color: rgb(4, 55, 44, 0.5);
+    margin: 2%;
+    padding: 50px;
+    width: 60%;
+    height: 50%;
+    text-align: center;
+    font-size: large;
+    margin-right: 230px;
+    position: relative;
+    margin-top: 20%;
+}
+
+#education{
+    padding: 2%;
+    margin: 2%;
+    border:#164d63;
+    border-radius: 3px;
+}
+
+#cv{
+    padding: 2%;
+    margin: 2%;
+    border:#164d63;
+    border-radius: 3px;
+}
+
+#contact{
+    padding: 2%;
+    margin: 2%;
+    border:#164d63;
+    border-radius: 3px;
+}
+
+#modal-contact{
+padding: 5px;
+border: rgb(41, 20, 80) solid 3px;
+}
+
+#modal_contact:target{
+    z-index: 100;
+
+}
+
+.modal{
+    position: fixed;
+    top: 0;
+    background-color: rgb(114, 184, 216, 0.5);
+    opacity: 1;
+    width: 100%;
+    height: 10%;
+    font-size: x-large;
+    text-align: center;
+    z-index: 1;
+}
+
+#cu{
+     display: none;
+    position: fixed;
+    width: 50%;
+    height: 200px;
+    background-color: aliceblue;
+    top:50px;
+    left: 25%;
+    z-index: 1000;
+    font-size: large;
+    border-radius: 2px;
+}
+
+#cu:target{
+    display: block;
+}
+
+#l2{
+position: absolute;
+top: 640px;
+right: 20px;
+background-color: rgb(32, 158, 158);
+font-size: large;
+border: #602b9c solid 3px;
+border-radius: 10px;
+width: 15%;
+height: 45%;
+
+}
+
+#jumpup{
+    width: 3%;
+    height: 15%;
+    background-color: rgba(52, 88, 88, 0.5);
+    border: #333;
+    border-radius: 10px;
+    position: fixed;
+    top:80px;
+    right: 60px;
+    font-size: xx-large;
+    animation:  examples;
+}
+
+
+
+#Footer{
+    background-color: #164d63;
+    border: rgb(43, 159, 226);
+    border-radius: 5px;
+    position: relative;
+    bottom: 0;
+    margin-bottom: 0;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+font-size: x-large;
+animation: example1;
+
+}
