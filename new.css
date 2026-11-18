@@ -332,15 +332,4 @@ height:30px; }
 #about{
 margin-top:150px; }
 overflow-x: hidden;
-.menu-button {
-    display: block;
-  }
-  .menu {
-    display: none;
-    flex-direction: column;
-  }
-
-  .menu.open {
-    display: flex;
-  }
 }
