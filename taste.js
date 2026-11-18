@@ -51,6 +51,6 @@
   });
 
   startAutoSlide();
-  document.querySelector(".menu-toggle").addEventListener("click", () => {
-    document.querySelector(".menu").classList.toggle("open");
+   document.querySelector(".menu-toggle").addEventListener("click", () => {
+    document.querySelector(".L2").classList.toggle("open");
   });
