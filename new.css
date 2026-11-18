@@ -325,8 +325,7 @@ animation: example1;
 / تبلت و موبایل /
 @media (max-width: 768px){
 .modal{
-height:40px;
-flex-wrap: wrap; }
+height:20px; }
 #about{
 margin-top: 100px; }
 overflow-x: hidden;
