@@ -12,6 +12,13 @@ text-decoration: none;
 html {
     scroll-behavior: smooth;
 }
+.l2 {
+  display: none;
+}
+
+.l2.open {
+  display: block;
+}
 
 .header {
     position: sticky;
