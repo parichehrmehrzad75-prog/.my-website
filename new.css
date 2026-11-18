@@ -244,7 +244,7 @@ border: rgb(41, 20, 80) solid 3px;
     background-color: rgb(114, 184, 216, 0.5);
     opacity: 1;
     width: 100%;
-    height: 20px;
+    height: 30px;
     font-size: x-large;
     text-align: center;
     z-index: 1;
@@ -325,9 +325,9 @@ animation: example1;
 / تبلت و موبایل /
 @media (max-width: 768px){
 .modal{
-height:20px; }
+height:30px; }
 #about{
-margin-top: 100px; }
+margin-top:150px; }
 overflow-x: hidden;
 .menu-button {
     display: block;
