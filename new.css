@@ -306,3 +306,13 @@ font-size: x-large;
 animation: example1;
 
 }
+
+/ تبلت و موبایل /
+@media (max-width: 768px){
+.modal{
+flex-wrap: wrap; }
+#about{
+top: 100px; }
+overflow-x: hidden;
+}
+
