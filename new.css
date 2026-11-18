@@ -310,7 +310,10 @@ animation: example1;
 #menu-toggle {
   display: none;
 }
-
+.menu {
+  display: flex;
+  gap: 16px;
+}
 .menu-button {
   display: none;
   cursor: pointer;
@@ -332,14 +335,12 @@ overflow-x: hidden;
 .menu-button {
     display: block;
   }
-
   .menu {
     display: none;
     flex-direction: column;
   }
 
-  #menu-toggle:checked + .menu-button + .menu {
+  .menu.open {
     display: flex;
   }
 }
-
