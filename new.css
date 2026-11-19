@@ -274,13 +274,14 @@ border: rgb(41, 20, 80) solid 3px;
 
 #l2{
 position: absolute;
-top: 100px;
+top: 640px;
 right: 20px;
 background-color: rgb(32, 158, 158);
 font-size: large;
 border: #602b9c solid 3px;
 border-radius: 10px;
 width: 15%;
+height: auto;
 
 }
 
@@ -311,5 +312,23 @@ width: 15%;
     text-align: center;
 font-size: x-large;
 animation: example1;
+
+}
+
+/* واکنش گرا بودن */
+
+/*تبلت*/
+@media (min-width: 769px) and (max-width:1024px){
+ 
+}
+
+/*موبایل*/
+@media (max-width: 768px) {
+body {
+max-width: 100%;
+
+}
+   .modal{
+        flex-direction: column ;   }
 
 }
