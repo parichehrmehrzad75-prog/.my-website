@@ -5,9 +5,6 @@ padding: 0;
 width: 100%;
 box-sizing: border-box;
 }
-a{
-text-decoration: none;
-}
 
 html {
     scroll-behavior: smooth;
@@ -20,7 +17,6 @@ html {
     height: 500px;
     overflow: hidden;
     z-index: 1000;
-padding: 10px 16px;
 }
 
 .slider{
@@ -37,7 +33,7 @@ padding: 10px 16px;
 .slide{
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: auto;
      text-align: center;
    object-fit: contain;
    display: none;
@@ -107,7 +103,7 @@ background-color:#999;
 }
 
 #im{
-height: 100%;
+height: 100%;    
 position:fixed;
 top:0;
 left: 0;
@@ -118,7 +114,6 @@ z-index: -1;
 
 #jumpdn{
     width: 100%;
-height:30px;
     position: relative;
    top:560px;
     background-color: rgba(63, 155, 179, 0.5);
@@ -186,11 +181,12 @@ background-color: aqua;
     border: rgb(85, 47, 255, 0.5) solid 5px;
     border-radius: 20px;
     position: fixed;
-    top: 150px;
+    top: 90px;
    left: 0;
     padding: 1%;
     width: 10%;
     overflow: auto;
+    font-weight: bold;
     font-size: medium;
 }
 
@@ -242,13 +238,21 @@ border: rgb(41, 20, 80) solid 3px;
 .modal{
     position: fixed;
     top: 0;
+    padding: 12px 20px;
     background-color: rgb(114, 184, 216, 0.5);
     opacity: 1;
     width: 100%;
-    height: 30px;
+    height: 10%;
     font-size: x-large;
     text-align: center;
+    justify-content: center;
     z-index: 1;
+}
+.modal a{
+    color:#353474;
+    border-radius: 8px;
+    font-family: sense-serif;
+    padding: 15px 20px;
 }
 
 #cu{
@@ -276,14 +280,14 @@ background-color: rgb(32, 158, 158);
 font-size: large;
 border: #602b9c solid 3px;
 border-radius: 10px;
-width: 16%;
-height: 50px;
+width: 15%;
+height: auto;
 
 }
 
 #jumpup{
     width: 3%;
-    height: 15%;
+    height: auto;
     background-color: rgba(52, 88, 88, 0.5);
     border: #333;
     border-radius: 10px;
@@ -307,16 +311,24 @@ height: 50px;
     height: 60px;
     text-align: center;
 font-size: x-large;
-}
-#dwn{
-bottom: 0;
+animation: example1;
+
 }
 
-/ تبلت و موبایل /
-@media (max-width: 768px){
-.modal{
-height:30px; }
-#about{
-margin-top:150px; }
+/* واکنش گرا بودن */
+
+//تبلت//
+@media (min-width: 769px) and (max-width:1024px){
+ 
+}
+
+//موبایل//
+@media (max-width: 768px) {
+body {
+max-width: 100%;
 overflow-x: hidden;
+}
+   .modal{
+        flex-direction: column ;   }
+
 }
