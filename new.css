@@ -337,15 +337,16 @@ max-width: 100%;
 }
 #about{
 position: static;
-width: 60%;
-margin-top: 50px;
+width: 40%;
+margin-top: 30px;
+margin-right= 0;
 background-color: rgb(25, 25, 112, 0/5);
 font-size: medium;
 }
 .modal{
 font-size: medium;
 }
-.maintext{
+#maintext1{
 position: static;
 margin-right: 10px;
 }
