@@ -336,7 +336,7 @@ body {
 max-width: 100%;
 }
 #about{
-position: static;
+position: relative;
 width: 40%;
 margin-top: 25px;
 margin-left= 0;
@@ -345,16 +345,16 @@ font-size: medium;
 }
 .modal{
 font-size: medium;
-width= 40%;
+width= 50%;
 }
 #maintext1{
-width: 40%;
+width: 60%;
 position: static;
-margin-right: 40px;
+margin-right: 50px;
 }
 .l2{
-width: 40%;
-height: auto;
+width: 50%;
+height: 40%;
 margin-top: 60px;
 }
     .Footer{
