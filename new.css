@@ -339,7 +339,6 @@ max-width: 100%;
 position: relative;
 width: 40%;
 margin-top: 25px;
-margin-left= 0;
 background-color: rgb(25, 25, 112, 0/5);
 font-size: medium;
 }
@@ -348,14 +347,17 @@ font-size: medium;
 width= 50%;
 }
 #maintext1{
-width: 60%;
+width: 80%;
 position: static;
-margin-right: 50px;
+margin-right: 70px;
 }
 .l2{
-width: 50%;
-height: 40%;
+position: relative;
+margin-right= 0;
+width: 60%;
+height: 50%;
 margin-top: 60px;
+font-size: medium;
 }
     .Footer{
         margin-bottom: 0;
