@@ -350,11 +350,12 @@ width= 40%;
 #maintext1{
 width: 40%;
 position: static;
-margin-right: 10px;
+margin-right: 40px;
 }
 .l2{
 width: 40%;
-margin-top: 100px;
+height: auto;
+margin-top: 60px;
 }
     .Footer{
         margin-bottom: 0;
