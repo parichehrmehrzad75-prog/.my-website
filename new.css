@@ -336,10 +336,11 @@ body {
 max-width: 100%;
 }
 #about{
-
-width: 80%;
+position: static;
+width: 60%;
 margin-top: 50px;
 background-color: rgb(25, 25, 112, 0/5);
+font-size: medium;
 }
 .modal{
 font-size: medium;
@@ -348,7 +349,7 @@ font-size: medium;
 margin-right: 5px;
 }
 .l2{
-width: 70%;
+width: 30%;
 margin-top: 100px;
 }
     .Footer{
