@@ -130,6 +130,7 @@ div::after{
     white-space: pre;
 }
 
+
 .maintext:nth-child(2n+1){
 background-color: aqua;
 }
@@ -147,8 +148,7 @@ background-color: aqua;
 }
 
 #about{
-    background: linear-gradient(#333,#999);
-    color: black;
+    background-color: rgb(0, 47, 255);
     border: rgb(85, 47, 255, 0.5) solid 5px;
     border-radius: 20px;
     position: fixed;
