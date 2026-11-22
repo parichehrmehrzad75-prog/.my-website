@@ -350,6 +350,7 @@ width= 50%;
 #maintext1{
 width: 80%;
 position: static;
+top: 40px;
 margin-right: 60px;
 }
 #l2{
