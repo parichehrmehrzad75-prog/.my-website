@@ -338,8 +338,9 @@ max-width: 100%;
 #about{
 position: relative;
 width: 40%;
+right: 20px;
 margin-top: 25px;
-background-color: rgb(25, 25, 112, 0/5);
+background-color: rgb(0, 0, 255, 0.5);
 font-size: medium;
 }
 .modal{
@@ -353,6 +354,7 @@ margin-right: 60px;
 }
 #l2{
 position: static;
+right: 20px;
 margin-left: 0;
 width: 60%;
 height: 50%;
