@@ -18,8 +18,8 @@ text-decoration: none;
     padding: 20px;
     margin-top: 40px;
 opacity: 0.9;
+background-color: rgb(0, 47, 255);
 }
-
 #l2 ul {
     list-style: none;
     padding: 0;
@@ -113,7 +113,7 @@ z-index: -1;
 
 
 #about:hover{
-    color:#c4c9bb;
+    color: rgb(0, 80, 255);
 }
 
 .maintext:active{
@@ -148,13 +148,13 @@ background-color: aqua;
 }
 
 #about{
-    background-color: rgb(0, 47, 255);
-    border: rgb(85, 47, 255, 0.5) solid 5px;
+    background-color: rgb(0, 100, 255);
+    border: blue;
     border-radius: 20px;
     position: fixed;
     top: 90px;
    left: 0;
-    padding: 1%;
+    padding: 2%;
     width: 10%;
     overflow: auto;
     font-weight: bold;
