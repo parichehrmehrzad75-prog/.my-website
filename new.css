@@ -289,16 +289,14 @@ height: auto;
 }
 
 #jumpup{
-    width: 3%;
-    height: auto;
+    width: 4%;
     background-color: rgba(52, 88, 88, 0.5);
     border: #333;
-    border-radius: 10px;
+    border-radius: 50px;
     position: fixed;
     top:80px;
     right: 60px;
-    font-size: xx-large;
-    animation:  examples;
+    font-size: xxx-large;
 }
 
 
