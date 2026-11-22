@@ -16,3 +16,25 @@ searchBtn.addEventListener("click", function() {
     }
 
 });
+
+
+// انتخاب دکمه همبرگری
+const menuBtn = document.querySelector("#menuBtn");
+
+// انتخاب منوی کناری
+const sideMenu = document.querySelector("#sideMenu");
+
+// انتخاب دکمه بستن
+const closeBtn = document.querySelector("#closeBtn");
+
+menuBtn.addEventListener("click", function() {
+
+    sideMenu.style.transform = "translateX(0)";
+
+});
+
+closeBtn.addEventListener("click", function() {
+
+    sideMenu.style.transform = "translateX(100%)";
+
+});
