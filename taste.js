@@ -1,56 +1,18 @@
+const searchInput = document.querySelector("#searchInput");
 
-  const slides = document.querySelectorAll(".slider .slide");
-  const prevButton = document.querySelector(".slider .prev");
-  const nextButton = document.querySelector(".slider .next");
-  const dots = document.querySelectorAll(".slider .dots span");
+const searchBtn = document.querySelector("#searchBtn");
 
-  let currentIndex = [...slides].findIndex(slide =>
-    slide.classList.contains("active")
-  );
+const result = document.querySelector("#result");
 
-  if (currentIndex < 0) currentIndex = 0;
+searchBtn.addEventListener("click", function() {
 
-  function showSlide(index) {
-    slides[currentIndex].classList.remove("active");
-    if (dots[currentIndex]) dots[currentIndex].classList.remove("dot-active");
+    let searchValue = searchInput.value.trim();
 
-    currentIndex = (index + slides.length) % slides.length;
+    if (searchValue === "") {
+        result.innerHTML = "Please enter a flight number!";
+    } 
+    else {
+        result.innerHTML = "Searching for: " + searchValue;
+    }
 
-    slides[currentIndex].classList.add("active");
-    if (dots[currentIndex]) dots[currentIndex].classList.add("dot-active");
-  }
-
-  let timer;
-
-  function startAutoSlide() {
-    clearInterval(timer);
-    timer = setInterval(() => showSlide(currentIndex + 1), 3000);
-  }
-
-  prevButton.addEventListener("click", () => {
-    showSlide(currentIndex - 1);
-    startAutoSlide();
-  });
-
-  nextButton.addEventListener("click", () => {
-    showSlide(currentIndex + 1);
-    startAutoSlide();
-  });
-
-  document.querySelector(".slider").addEventListener("mouseenter", () => {
-    clearInterval(timer);
-  });
-
-  document.querySelector(".slider").addEventListener("mouseleave", startAutoSlide);
-
-  dots.forEach((dot, index) => {
-    dot.addEventListener("click", () => {
-      showSlide(index);
-      startAutoSlide();
-    });
-  });
-
-  startAutoSlide();
-   document.querySelector(".menu-toggle").addEventListener("click", () => {
-    document.querySelector(".L2").classList.toggle("open");
-  });
+});
