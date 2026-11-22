@@ -17,6 +17,7 @@ text-decoration: none;
     bottom: 500px;
     padding: 20px;
     margin-top: 40px;
+opacity: 0.9;
 }
 
 #l2 ul {
@@ -241,20 +242,7 @@ border: rgb(41, 20, 80) solid 3px;
 #cu:target{
     display: block;
 }
-
-#l2{
-position: absolute;
-top: 640px;
-right: 20px;
-background-color: rgb(32, 158, 158);
-font-size: large;
-border: #602b9c solid 3px;
-border-radius: 10px;
-width: 15%;
-height: auto;
-
-}
-
+
 #jumpup{
     width: 5%;
 height: auto;
