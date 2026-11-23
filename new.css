@@ -18,11 +18,10 @@ text-decoration: none;
     padding: 20px;
     margin-top: 40px;
 opacity: 0.9;
-background-color: rgb(0, 47, 255);
-}
+background-color: rgb(18, 42, 66);
 #l2 ul {
     list-style: none;
-    padding: 0;
+    padding: 1%;
 }
 
 #l2 li {
@@ -148,7 +147,7 @@ background-color: aqua;
 }
 
 #about{
-    background-color: rgb(0, 100, 255);
+    background-color: rgb(20, 35, 60);
     border: blue;
     border-radius: 20px;
     position: fixed;
