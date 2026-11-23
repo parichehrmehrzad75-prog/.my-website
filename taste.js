@@ -21,27 +21,14 @@ searchBtn.addEventListener("click", function() {
 // انتخاب دکمه همبرگری
 const menuBtn = document.querySelector("#menuBtn");
 
-// انتخاب منوی کناری
-const sideMenu = document.querySelector("#sideMenu");
+// انتخاب منوی l2
+const menu = document.querySelector("#l2");
 
 // انتخاب دکمه بستن
 const closeBtn = document.querySelector("#closeBtn");
 
-menuBtn.addEventListener("click", function() {
 
-    sideMenu.style.transform = "translateX(0)";
-
-});
-
-closeBtn.addEventListener("click", function() {
-
-    sideMenu.style.transform = "translateX(100%)";
-
-});
-
-const menuBtn = document.querySelector("#menuBtn");
-const menu = document.querySelector("#l2");
-
+// باز و بسته کردن منو
 menuBtn.addEventListener("click", function() {
 
     if (menu.style.display === "block") {
@@ -50,5 +37,13 @@ menuBtn.addEventListener("click", function() {
     else {
         menu.style.display = "block";
     }
+
+});
+
+
+// دکمه بستن
+closeBtn.addEventListener("click", function() {
+
+    menu.style.display = "none";
 
 });
