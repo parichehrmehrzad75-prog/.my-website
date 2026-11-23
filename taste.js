@@ -38,3 +38,17 @@ closeBtn.addEventListener("click", function() {
     sideMenu.style.transform = "translateX(100%)";
 
 });
+
+const menuBtn = document.querySelector("#menuBtn");
+const menu = document.querySelector("#l2");
+
+menuBtn.addEventListener("click", function() {
+
+    if (menu.style.display === "block") {
+        menu.style.display = "none";
+    } 
+    else {
+        menu.style.display = "block";
+    }
+
+});
