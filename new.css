@@ -18,6 +18,7 @@ top:10px;
 }
 
 #l2 {
+display: none;
     bottom: 500px;
     padding: 20px;
     margin-top: 40px;
