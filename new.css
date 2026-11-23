@@ -320,7 +320,7 @@ margin-top: 25px;
 font-size: medium;
 }
 .btn{
-position: relative;
+position: static;
 top: 5px;
 }
     .Footer{
