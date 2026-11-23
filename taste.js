@@ -21,29 +21,24 @@ searchBtn.addEventListener("click", function() {
 // انتخاب دکمه همبرگری
 const menuBtn = document.querySelector("#menuBtn");
 
-// انتخاب منوی l2
-const menu = document.querySelector("#l2");
+// انتخاب منوی کناری
+const sideMenu = document.querySelector("#sideMenu");
 
 // انتخاب دکمه بستن
 const closeBtn = document.querySelector("#closeBtn");
 
 
-// باز و بسته کردن منو
+// باز شدن منو
 menuBtn.addEventListener("click", function() {
 
-    if (menu.style.display === "block") {
-        menu.style.display = "none";
-    } 
-    else {
-        menu.style.display = "block";
-    }
+    sideMenu.style.transform = "translateX(0)";
 
 });
 
 
-// دکمه بستن
+// بسته شدن منو
 closeBtn.addEventListener("click", function() {
 
-    menu.style.display = "none";
+    sideMenu.style.transform = "translateX(100%)";
 
 });
