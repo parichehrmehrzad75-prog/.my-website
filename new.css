@@ -277,10 +277,7 @@ animation: example1;
 
 
 /*موبایل*/
-@media (max-width: 768px) {
-.slider{
-display: none;
-}
+@media (max-width: 768px) {
 * {
         box-sizing: border-box;
     }
@@ -295,8 +292,7 @@ max-width: 100%;
 position: relative;
 width: 40%;
 right: 20px;
-margin-top: 25px;
-background-color: rgb(0, 0, 255, 0.5);
+margin-top: 25px;
 font-size: medium;
 }
 .modal{
@@ -312,8 +308,8 @@ margin-right: 60px;
 #l2{
 position: static;
 right: 20px;
-width: 60%;
-height: 50%;
+width: 40%;
+height: 40%;
 margin-top: 25px;
 font-size: medium;
 }
