@@ -319,6 +319,10 @@ height: 40%;
 margin-top: 25px;
 font-size: medium;
 }
+.btn{
+position: relative;
+top: 5px;
+}
     .Footer{
         margin-bottom: 0;
 width:100%;
